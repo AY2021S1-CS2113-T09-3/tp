@@ -1,4 +1,4 @@
-# About us
+# About Chloe
 
 Display | Name | Github Profile | Portfolio 
 --------|:----:|:--------------:|:---------:
