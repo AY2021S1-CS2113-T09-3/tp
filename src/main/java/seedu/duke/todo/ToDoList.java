@@ -1,6 +1,5 @@
 package seedu.duke.todo;
 
-import seedu.duke.book.Book;
 import seedu.duke.lists.QuotesifyList;
 
 import java.util.ArrayList;

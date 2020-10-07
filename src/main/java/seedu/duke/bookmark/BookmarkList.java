@@ -1,19 +1,25 @@
 package seedu.duke.bookmark;
 
 import seedu.duke.book.Book;
+import seedu.duke.lists.QuotesifyList;
 
 import java.util.ArrayList;
 
-public class BookmarkList {
-    private ArrayList<Bookmark> bookmarks;
+public class BookmarkList extends QuotesifyList<Bookmark> {
+    private ArrayList<Bookmark> bookmarks = super.getList();
 
     public BookmarkList() {
-        bookmarks = new ArrayList<Bookmark>();
+        super(new ArrayList<Bookmark>());
     }
 
-    public void addBookmark(Bookmark bookmark) {
+    public BookmarkList(ArrayList<Bookmark> bookmarks) {
+        super(bookmarks);
+    }
+
+    @Override
+    public void add(Bookmark newBookmark) {
         System.out.println("Adding bookmark to the list...");
-        bookmarks.add(bookmark);
+        bookmarks.add(newBookmark);
         System.out.println("Finished added");
     }
 
@@ -25,14 +31,20 @@ public class BookmarkList {
         }
         return null;
     }
-
-    public void removeBookmark(Bookmark bookmark) {
-        bookmarks.remove(bookmark);
+    
+    @Override
+    public void delete(int index) {
+        bookmarks.remove(index);
     }
 
-    public void listBookmarks() {
-        for (int i = 0; i < bookmarks.size(); i++) {
-            System.out.println(bookmarks.get(i).toString());
+    @Override
+    public String toString() {
+        String bookmarksToReturn = "";
+
+        for (Bookmark bookmark: bookmarks) {
+            bookmarksToReturn += bookmark.toString() + System.lineSeparator();
         }
+
+        return bookmarksToReturn;
     }
 }

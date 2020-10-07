@@ -12,7 +12,7 @@ public class BookmarkCommand {
     public void execute(BookmarkList bookmarks) {
         Bookmark targetBookmark = bookmarks.findBookmark(bookmark.getBook());
         if(targetBookmark == null) {
-            bookmarks.addBookmark(bookmark);
+            bookmarks.add(bookmark);
         }
         else {
             targetBookmark.setPageNum(bookmark.getPageNum());
