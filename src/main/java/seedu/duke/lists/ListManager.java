@@ -8,6 +8,7 @@ public class ListManager {
     public static final int CATEGORY_LIST = 2;
     public static final int QUOTE_LIST = 3;
     public static final int RATING_LIST = 4;
+    public static final int TODO_LIST = 5;
 
     private HashMap<Integer, QuotesifyList<?>> listManager;
 
