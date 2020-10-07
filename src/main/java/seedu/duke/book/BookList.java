@@ -35,4 +35,14 @@ public class BookList extends QuotesifyList<Book> {
 
         return booksToReturn;
     }
+
+    //return book objects with matching titles.
+    public Book find(String titleName) {
+        for (Book book : books) {
+            if(titleName.equals(book.getTitle())){
+                return book;
+            }
+        }
+        return null;
+    }
 }

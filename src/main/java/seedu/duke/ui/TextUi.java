@@ -1,6 +1,7 @@
 package seedu.duke.ui;
 
 import seedu.duke.book.Book;
+import seedu.duke.bookmark.Bookmark;
 import seedu.duke.category.Category;
 import seedu.duke.quote.QuoteList;
 
@@ -21,6 +22,7 @@ public class TextUi {
     private static final String ADD_CATEGORY_MESSAGE = "I have tagged \"%s\" category to \"%s\"!";
     private static final String DELETE_CATEGORY_MESSAGE = "I have removed \"%s\" category from \"%s\"!";
     private static final String CATEGORY_SIZE_MESSAGE = "You have a total of %d item(s) tagged as \"%s\".";
+    private static final String ADD_BOOKMARK = "This bookmark has been added:";
 
     private final Scanner in;
 
@@ -74,5 +76,10 @@ public class TextUi {
 
     public void printBook(Book book) {
         System.out.println(book.toString());
+    }
+
+    public void printAddBookmark(Bookmark bookmark){
+        System.out.println(ADD_BOOKMARK);
+        System.out.println(bookmark.toString());
     }
 }

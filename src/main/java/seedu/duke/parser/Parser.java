@@ -1,5 +1,6 @@
 package seedu.duke.parser;
 
+import seedu.duke.bookmark.BookmarkCommand;
 import seedu.duke.commands.AddCommand;
 import seedu.duke.commands.Command;
 import seedu.duke.commands.DeleteCommand;
@@ -29,6 +30,7 @@ public class Parser {
         case COMMAND_ADD:
             return new AddCommand(arguments);
         case COMMAND_BOOKMARK:
+            return new BookmarkCommand(arguments);
         case COMMAND_DELETE:
             return new DeleteCommand(arguments);
         case COMMAND_EDIT:
