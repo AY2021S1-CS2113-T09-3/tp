@@ -8,7 +8,7 @@ public class DoneCommand {
     }
 
     public void execute(ToDoList toDos) {
-        ToDo targetTask = toDos.findToDo(pageNumber);
+        ToDo targetTask = toDos.find(pageNumber);
         if(targetTask != null) {
             targetTask.setDone(true);
         }

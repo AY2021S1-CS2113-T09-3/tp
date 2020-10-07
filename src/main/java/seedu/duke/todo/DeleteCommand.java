@@ -8,7 +8,7 @@ public class DeleteCommand {
     }
 
     public void execute(ToDoList toDos) {
-        ToDo targetTask = toDos.findToDo(taskNumber);
+        ToDo targetTask = toDos.find(taskNumber);
         if(targetTask != null) {
             toDos.removeTodo(taskNumber);
         }

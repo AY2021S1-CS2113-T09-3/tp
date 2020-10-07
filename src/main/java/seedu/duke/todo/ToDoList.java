@@ -1,34 +1,47 @@
 package seedu.duke.todo;
 
+import seedu.duke.book.Book;
+import seedu.duke.lists.QuotesifyList;
+
 import java.util.ArrayList;
 
-public class ToDoList {
-    private ArrayList<ToDo> todos;
+public class ToDoList extends QuotesifyList<ToDo> {
+    private ArrayList<ToDo> toDos = super.getList();
 
-    public ToDoList(){
-        todos = new ArrayList<ToDo>();
+    public ToDoList() {
+        super(new ArrayList<ToDo>());
+    }
+    public ToDoList(ArrayList<ToDo> toDos) {
+        super(toDos);
     }
 
-    public void addToDo(ToDo toDo) {
-        todos.add(toDo);
+    @Override
+    public void add(ToDo newToDo) {
+        toDos.add(newToDo);
     }
 
-    public ToDo findToDo(int taskNum) {
-        if(taskNum <= todos.size()) {
-            return todos.get(taskNum);
+    @Override
+    public void delete(int index) {
+        toDos.remove(index);
+    }
+
+    public ToDo find(int taskNum) {
+        if(taskNum <= toDos.size()) {
+            return toDos.get(taskNum);
         }
         else {
             return null;
         }
     }
 
-    public void removeTodo(int taskNum) {
-        todos.remove(todos.get(taskNum));
-    }
+    @Override
+    public String toString() {
+        String toDosToReturn = "";
 
-    public void listTodos(){
-        for(int i = 0; i < todos.size(); i++){
-            System.out.println();
+        for (ToDo toDo : toDos) {
+            toDosToReturn += toDo.toString() + System.lineSeparator();
         }
+
+        return toDosToReturn;
     }
 }
