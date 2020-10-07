@@ -10,6 +10,7 @@ public abstract class Command {
     public static final String TAG_QUOTE = "-q";
     public static final String TAG_RATING = "-r";
     public static final String TAG_CATEGORY = "-c";
+    public static final String KEY_BOOKMARK = "bookmark";
 
     public static final String ERROR_INVALID_QUOTE_NUM = "Invalid quote number specified!";
 

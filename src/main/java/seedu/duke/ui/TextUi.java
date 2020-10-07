@@ -23,6 +23,7 @@ public class TextUi {
     private static final String DELETE_CATEGORY_MESSAGE = "I have removed \"%s\" category from \"%s\"!";
     private static final String CATEGORY_SIZE_MESSAGE = "You have a total of %d item(s) tagged as \"%s\".";
     private static final String ADD_BOOKMARK = "This bookmark has been added:";
+    private static final String DELETE_BOOKMARK_MESSAGE = "I have removed \"%s\" bookmark from \"%s\"!";
 
     private final Scanner in;
 
@@ -81,5 +82,9 @@ public class TextUi {
     public void printAddBookmark(Bookmark bookmark){
         System.out.println(ADD_BOOKMARK);
         System.out.println(bookmark.toString());
+    }
+
+    public void printRemoveBookmark(Bookmark bookmark){
+        System.out.printf((DELETE_BOOKMARK_MESSAGE) + "\n", bookmark.toString(), bookmark.getBook().getTitle());
     }
 }

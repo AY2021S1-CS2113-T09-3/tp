@@ -32,6 +32,13 @@ public class BookmarkList extends QuotesifyList<Bookmark> {
         return null;
     }
 
+    public void deleteByTitle(Book book){
+        for (Bookmark bookmark: bookmarks) {
+            if(bookmark.getBook().equals(book)){
+                bookmarks.remove(bookmark);
+            }
+        }
+    }
     @Override
     public void delete(int index) {
         bookmarks.remove(index);

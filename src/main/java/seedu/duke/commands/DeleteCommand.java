@@ -2,6 +2,8 @@ package seedu.duke.commands;
 
 import seedu.duke.book.Book;
 import seedu.duke.book.BookList;
+import seedu.duke.bookmark.Bookmark;
+import seedu.duke.bookmark.BookmarkList;
 import seedu.duke.category.Category;
 import seedu.duke.category.CategoryList;
 import seedu.duke.category.CategoryParser;
@@ -28,6 +30,12 @@ public class DeleteCommand extends Command {
         case TAG_CATEGORY:
             CategoryList categories = (CategoryList) listManager.getList(ListManager.CATEGORY_LIST);
             deleteCategoryFromBookOrQuote(categories, ui, listManager);
+            break;
+        case KEY_BOOKMARK:
+            BookList books = (BookList)listManager.getList(ListManager.BOOK_LIST);
+            BookmarkList bookmarks = (BookmarkList) listManager.getList(ListManager.BOOKMARK_LIST);
+            Bookmark removedBookmark = deleteBookmarkFromBook(books,bookmarks);
+            ui.printRemoveBookmark(removedBookmark);
             break;
         default:
         }
@@ -95,6 +103,26 @@ public class DeleteCommand extends Command {
             return false;
         }
         return true;
+    }
+
+    private Bookmark deleteBookmarkFromBook(BookList books, BookmarkList bookmarks) {
+        String[] tagAndTitle = information.split(" ", 2);
+        String tag = tagAndTitle[0].trim();
+        String title = tagAndTitle[1].trim();
+        Book targetBook = null;
+        Bookmark targetBookmark = null;
+
+        if (tag.equals(TAG_BOOK) && title != null) {
+            targetBook = books.find(title);
+            if (targetBook != null){
+                targetBookmark = bookmarks.findBookmark(targetBook);
+                if(targetBookmark != null){
+                    bookmarks.deleteByTitle(targetBook);
+                    return targetBookmark;
+                }
+            }
+        }
+        return targetBookmark;
     }
 
     @Override

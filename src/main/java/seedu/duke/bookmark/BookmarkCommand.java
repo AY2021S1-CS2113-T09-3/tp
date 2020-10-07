@@ -11,7 +11,6 @@ import java.io.IOException;
 public class BookmarkCommand extends Command {
     private String type;
     private String information;
-    private Bookmark bookmark;
 
     public BookmarkCommand(String arguments) {
         String[] details = arguments.split(" ", 2);
@@ -36,14 +35,13 @@ public class BookmarkCommand extends Command {
         String[] titleAndPageNum = information.split("/pg" , 2);
         String titleName = titleAndPageNum[0].trim();
         int pageNum = 0;
-        Bookmark newBookmark = null;
         try {
             pageNum = Integer.parseInt(titleAndPageNum[1].trim());
         }catch (NumberFormatException e) {
             System.out.println("Error: Invalid pageNum!");
         }
         Book targetBook = books.find(titleName);
-        newBookmark = bookmarks.findBookmark(targetBook);
+        Bookmark newBookmark = bookmarks.findBookmark(targetBook);
         if ( newBookmark == null) {
             newBookmark = new Bookmark(targetBook,pageNum);
             bookmarks.add(newBookmark);
@@ -53,6 +51,11 @@ public class BookmarkCommand extends Command {
         }
 
         return newBookmark;
+    }
+
+    @Override
+    public boolean isExit(){
+        return false;
     }
 
 }

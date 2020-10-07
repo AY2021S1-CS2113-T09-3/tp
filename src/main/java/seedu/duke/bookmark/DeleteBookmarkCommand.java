@@ -12,7 +12,7 @@ public class DeleteBookmarkCommand {
     public void execute(BookmarkList bookmarks) {
         Bookmark targetBookmark = bookmarks.findBookmark(book);
         if(targetBookmark != null){
-            bookmarks.delete(targetBookmark);
+            bookmarks.deleteByTitle(book);
         }
         else{
             System.out.println("The bookmark of given title does not exit");
