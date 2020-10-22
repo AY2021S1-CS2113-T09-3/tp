@@ -426,3 +426,19 @@ Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand addCategoryToBook
 INFO: add category to book success
 Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand addCategoryToQuote
 WARNING: Category [nice] already exists in "quote1"!
+Oct 22, 2020 5:54:10 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add book to booklist
+Oct 22, 2020 5:54:10 PM seedu.quotesify.commands.AddCommand execute
+INFO: added book to booklist
+Oct 22, 2020 5:54:29 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add book to booklist
+Oct 22, 2020 5:54:29 PM seedu.quotesify.commands.AddCommand execute
+INFO: added book to booklist
+Oct 22, 2020 5:54:35 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add book to booklist
+Oct 22, 2020 5:54:35 PM seedu.quotesify.commands.AddCommand execute
+INFO: added book to booklist
+Oct 22, 2020 5:55:09 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add rating to book
+Oct 22, 2020 5:55:09 PM seedu.quotesify.commands.AddCommand execute
+INFO: rating of book has completed

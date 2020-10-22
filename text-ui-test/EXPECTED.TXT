@@ -57,8 +57,3 @@ QUOTES:
 1. "quote1"
 What would you like to do with Quotesify?
 The book [book1 by me] has been deleted!
-
-What would you like to do with Quotesify?
-Before you continue, here's something:
-"quote1"
-Alright, have a nice day!
