@@ -91,6 +91,11 @@ public class Book implements JsonSerializer {
 
     public String getBookDetailString() {
         String stringToReturn = "";
+
+        if (isDone) {
+            stringToReturn += "[Finished Reading]" + System.lineSeparator();
+        }
+
         stringToReturn += "Title: " + title + System.lineSeparator();
         stringToReturn += "Author: " + author.getName() + System.lineSeparator();
         stringToReturn += "Categories: " + System.lineSeparator();
