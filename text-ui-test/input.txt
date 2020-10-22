@@ -11,3 +11,4 @@ delete -c motivational -q 1
 list -c motivational
 list -c nice
 delete -b 1
+bye

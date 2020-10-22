@@ -1,19 +1,20 @@
-________                __                .__  _____       
+________                __                .__  _____
 \_____  \  __ __  _____/  |_  ____   _____|__|/ ____\__.__.
  /  / \  \|  |  \/  _ \   __\/ __ \ /  ___/  \   __<   |  |
 /   \_/.  \  |  (  <_> )  | \  ___/ \___ \|  ||  |  \___  |
 \_____\ \_/____/ \____/|__|  \___  >____  >__||__|  / ____|
-       \__>                      \/     \/          \/    
+       \__>                      \/     \/          \/
 Welcome to Quotesify v1.0!
 Before you continue, here's something:
-*Inserts inspirational quote here*
+"quote1"
 
 What would you like to do with Quotesify?
+
 I don't understand you.
 Maybe type "help" for usage instructions?
 
 What would you like to do with Quotesify?
-The book [book1 by me] has been added!
+The book already exists!
 
 What would you like to do with Quotesify?
 The quote ["quote1"] has been added!
@@ -26,7 +27,7 @@ I have tagged category [motivational] to "quote1"!
 
 What would you like to do with Quotesify?
 I have tagged category [nice] to "book1"!
-I have tagged category [nice] to "quote1"!
+Category [nice] already exists in "quote1"!
 
 What would you like to do with Quotesify?
 Here is the list of all categories:
@@ -59,5 +60,5 @@ The book [book1 by me] has been deleted!
 
 What would you like to do with Quotesify?
 Before you continue, here's something:
-*Inserts inspirational quote here*
+"quote1"
 Alright, have a nice day!

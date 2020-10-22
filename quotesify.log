@@ -328,3 +328,101 @@ Oct 22, 2020 4:40:34 PM seedu.quotesify.commands.AddCommand execute
 INFO: going to add book to booklist
 Oct 22, 2020 4:40:34 PM seedu.quotesify.commands.AddCommand execute
 INFO: added book to booklist
+Oct 22, 2020 5:43:08 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add book to booklist
+Oct 22, 2020 5:43:08 PM seedu.quotesify.commands.AddCommand execute
+INFO: added book to booklist
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add book to booklist
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand execute
+INFO: added book to booklist
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add quote to quote list
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand addQuote
+INFO: add quote to quote list success
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand addCategoryToBook
+INFO: add category to book success
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand addCategoryToQuote
+INFO: add category to quote success
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand addCategoryToBook
+INFO: add category to book success
+Oct 22, 2020 5:45:48 PM seedu.quotesify.commands.AddCommand addCategoryToQuote
+INFO: add category to quote success
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add book to booklist
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand addBook
+INFO: add book to booklist failed
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand execute
+INFO: added book to booklist
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add quote to quote list
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand addQuote
+INFO: add quote to quote list success
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand addCategoryToBook
+INFO: add category to book success
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand addCategoryToQuote
+INFO: add category to quote success
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand addCategoryToBook
+WARNING: Category [nice] already exists in "ABC"!
+Oct 22, 2020 5:47:13 PM seedu.quotesify.commands.AddCommand addCategoryToQuote
+WARNING: Category [nice] already exists in "quote1"!
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add book to booklist
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand addBook
+INFO: add book to booklist failed
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand execute
+INFO: added book to booklist
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add quote to quote list
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand addQuote
+INFO: add quote to quote list success
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand addCategoryToBook
+INFO: add category to book success
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand addCategoryToQuote
+INFO: add category to quote success
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand addCategoryToBook
+INFO: add category to book success
+Oct 22, 2020 5:48:43 PM seedu.quotesify.commands.AddCommand addCategoryToQuote
+WARNING: Category [nice] already exists in "quote1"!
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add book to booklist
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand addBook
+INFO: add book to booklist failed
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand execute
+INFO: added book to booklist
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add quote to quote list
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand addQuote
+INFO: add quote to quote list success
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand addCategoryToBook
+INFO: add category to book success
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand addCategoryToQuote
+INFO: add category to quote success
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add category to book/quote
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand addCategoryToBook
+INFO: add category to book success
+Oct 22, 2020 5:50:38 PM seedu.quotesify.commands.AddCommand addCategoryToQuote
+WARNING: Category [nice] already exists in "quote1"!
