@@ -1,5 +1,7 @@
 package seedu.quotesify.commands;
 
+import seedu.quotesify.book.Book;
+import seedu.quotesify.book.BookList;
 import seedu.quotesify.lists.ListManager;
 import seedu.quotesify.store.Storage;
 import seedu.quotesify.todo.ToDo;
@@ -29,11 +31,26 @@ public class DoneCommand extends Command {
             int index = computeToDoIndex(information.trim());
             doneToDo(toDos,index,ui);
             break;
+        case TAG_BOOK:
+            BookList books = (BookList) ListManager.getList(ListManager.BOOK_LIST);
+            markBookAsDone(books,ui);
+            break;
         default:
             ui.printDoneCommandUsage();
             break;
         }
         storage.save();
+    }
+
+    private void markBookAsDone(BookList books, TextUi ui) {
+        try {
+            int bookIndex = Integer.parseInt(information.trim()) - 1;
+            Book book = books.getBook(bookIndex);
+            book.setDone(true);
+            ui.printDoneBook(book);
+        } catch (NumberFormatException | IndexOutOfBoundsException e) {
+            ui.printErrorMessage(ERROR_INVALID_BOOK_NUM);
+        }
     }
 
     private void doneToDo(ToDoList toDos, int index, TextUi ui) {
