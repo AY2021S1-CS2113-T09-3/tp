@@ -10,18 +10,21 @@ import java.util.ArrayList;
 public class Book implements JsonSerializer {
     private Author author;
     private String title;
+    private boolean isDone;
     private ArrayList<String> categories = new ArrayList<>();
     private int rating;
 
     public Book(Author author, String title) {
         this.author = author;
         this.title = title;
+        this.isDone = false;
         this.rating = 0;
     }
 
     public Book(Author author, String title, ArrayList<String> category) {
         this.author = author;
         this.title = title;
+        this.isDone = false;
         this.categories = category;
         this.rating = 0;
     }
@@ -47,6 +50,18 @@ public class Book implements JsonSerializer {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public boolean isDone() {
+        return isDone;
+    }
+
+    public void setDone(boolean done) {
+        isDone = done;
+    }
+
+    public String getStatusIcon() {
+        return isDone ? "[\u2713] " : "[\u2718] ";
     }
 
     public ArrayList<String> getCategories() {
