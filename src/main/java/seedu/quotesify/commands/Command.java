@@ -51,6 +51,7 @@ public abstract class Command {
     public static final String FLAG_REFLECT = "/reflect";
     public static final String REFERENCE_KEYWORD = "reference";
     public static final String AUTHORNAME_KEYWORD = "authorName";
+    public static final String DONE_KEYWORD = "done";
 
     public abstract void execute(TextUi ui, Storage storage);
 

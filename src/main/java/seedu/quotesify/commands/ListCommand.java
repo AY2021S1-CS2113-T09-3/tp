@@ -80,7 +80,10 @@ public class ListCommand extends Command {
                 listAllBooks(bookList, ui);
             } else if (information.contains(FLAG_AUTHOR)) {
                 listBooksByAuthor(bookList, ui);
-            } else {
+            } else if (information.contains(DONE_KEYWORD)) {
+                listBooksDoneOrUndone(bookList, ui);
+            }
+            else {
                 listBookDetails(bookList, ui);
             }
         } catch (IndexOutOfBoundsException e) {
@@ -94,6 +97,24 @@ public class ListCommand extends Command {
         } catch (NumberFormatException e) {
             ui.printErrorMessage(ERROR_LIST_UNKNOWN_COMMAND);
         }
+    }
+
+    private void listBooksDoneOrUndone(BookList bookList, TextUi ui) {
+        if (information.trim().equals(DONE_KEYWORD)) {
+            listBooksDone(bookList, ui);
+        } else if (information.trim().equals("undone")) {
+            listBooksUndone(bookList, ui);
+        }
+    }
+
+    private void listBooksDone(BookList bookList, TextUi ui) {
+        BookList completedBooks = bookList.filterDone(true);
+        ui.printListDoneBook(completedBooks);
+    }
+
+    private void listBooksUndone(BookList bookList, TextUi ui) {
+        BookList undoneBooks = bookList.filterDone(false);
+        ui.printListUndoneBook(undoneBooks);
     }
 
     private void listBookDetails(BookList bookList, TextUi ui) throws NumberFormatException {
