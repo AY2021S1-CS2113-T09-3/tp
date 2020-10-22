@@ -52,6 +52,20 @@ public class TextUi {
         System.out.printf(UiMessage.EDIT_BOOK_MESSAGE + "\n", oldTitle, newTitle);
     }
 
+    public void printDoneBook(Book book) {
+        System.out.printf(UiMessage.DONE_BOOK_MESSAGE + "\n", book.toString());
+    }
+
+    public void printListDoneBook(BookList bookList) {
+        System.out.println(UiMessage.LIST_DONE_BOOK_MESSAGE);
+        System.out.println(bookList.toStringWithIndex());
+    }
+
+    public void printListUndoneBook(BookList bookList) {
+        System.out.println(UiMessage.LIST_UNDONE_BOOK_MESSAGE);
+        System.out.println(bookList.toStringWithIndex());
+    }
+
     public void printAllBooks(BookList bookList) {
         System.out.println(UiMessage.LIST_BOOKS_MESSAGE);
         System.out.println(bookList.toStringWithIndex());
