@@ -1,12 +1,12 @@
-________                __                .__  _____       
+________                __                .__  _____
 \_____  \  __ __  _____/  |_  ____   _____|__|/ ____\__.__.
  /  / \  \|  |  \/  _ \   __\/ __ \ /  ___/  \   __<   |  |
 /   \_/.  \  |  (  <_> )  | \  ___/ \___ \|  ||  |  \___  |
 \_____\ \_/____/ \____/|__|  \___  >____  >__||__|  / ____|
-       \__>                      \/     \/          \/    
+       \__>                      \/     \/          \/
 Welcome to Quotesify v1.0!
 Before you continue, here's something:
-*Inserts inspirational quote here*
+"Inserts inspirational quote here"
 
 What would you like to do with Quotesify?
 I don't understand you.
