@@ -32,6 +32,15 @@ public class Book implements JsonSerializer {
     public Book(Author author, String title, ArrayList<String> category, int rating) {
         this.author = author;
         this.title = title;
+        this.isDone = false;
+        this.categories = category;
+        this.rating = rating;
+    }
+
+    public Book(Author author, String title, boolean isDone, ArrayList<String> category, int rating) {
+        this.author = author;
+        this.title = title;
+        this.isDone = isDone;
         this.categories = category;
         this.rating = rating;
     }
@@ -117,6 +126,7 @@ public class Book implements JsonSerializer {
         JSONObject details = new JSONObject();
         details.put("author", this.getAuthor().toJson());
         details.put("title", this.getTitle());
+        details.put("isDone", this.isDone());
         details.put("categories", this.getCategories());
         details.put("rating", this.getRating());
         return details;
