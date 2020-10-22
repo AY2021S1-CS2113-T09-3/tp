@@ -70,7 +70,7 @@ public class Book implements JsonSerializer {
     }
 
     public String getStatusIcon() {
-        return isDone ? "[v] " : "[x] ";
+        return isDone ? "[\u2713] " : "[\u2718] ";
     }
 
     public ArrayList<String> getCategories() {

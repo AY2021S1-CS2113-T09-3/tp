@@ -82,7 +82,8 @@ public class ListCommand extends Command {
                 listBooksByAuthor(bookList, ui);
             } else if (information.contains(DONE_KEYWORD)) {
                 listBooksDoneOrUndone(bookList, ui);
-            } else {
+            }
+            else {
                 listBookDetails(bookList, ui);
             }
         } catch (IndexOutOfBoundsException e) {
