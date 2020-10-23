@@ -6,7 +6,7 @@ ________                __                .__  _____
        \__>                      \/     \/          \/    
 Welcome to Quotesify v1.0!
 Before you continue, here's something:
-"quote1"
+*Inserts inspirational quote here*
 
 What would you like to do with Quotesify?
 I don't understand you.
@@ -26,7 +26,7 @@ I have tagged category [motivational] to "quote1"!
 
 What would you like to do with Quotesify?
 I have tagged category [nice] to "book1"!
-Category [nice] already exists in "quote1"!
+I have tagged category [nice] to "quote1"!
 
 What would you like to do with Quotesify?
 Here is the list of all categories:
@@ -59,5 +59,5 @@ The book [book1 by me] has been deleted!
 
 What would you like to do with Quotesify?
 Before you continue, here's something:
-"quote1"
+*Inserts inspirational quote here*
 Alright, have a nice day!
