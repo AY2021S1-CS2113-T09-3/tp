@@ -168,6 +168,10 @@ public class TextUi {
         System.out.printf(UiMessage.ADD_QUOTE_REFLECTION + "\n", quote.toString(), reflection);
     }
 
+    public  void printDeleteQuoteReflection(String quote) {
+        System.out.printf((UiMessage.DELETE_QUOTE_REFLECTION_MESSAGE) + "\n", quote);
+    }
+
     public void printFindQuoteFail() {
         System.out.printf(UiMessage.FIND_QUOTE_FAIL);
     }

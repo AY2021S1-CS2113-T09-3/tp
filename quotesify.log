@@ -249,6 +249,8 @@ INFO: added book to booklist
 Oct 17, 2020 9:58:30 PM seedu.quotesify.commands.AddCommand execute
 INFO: going to add book to booklist
 Oct 17, 2020 9:58:30 PM seedu.quotesify.commands.AddCommand execute
+Oct 20, 2020 2:49:04 PM seedu.quotesify.commands.AddCommand execute
+INFO: going to add reflection to quote list
 Oct 20, 2020 3:46:41 PM seedu.quotesify.commands.AddCommand execute
 INFO: going to add book to booklist
 Oct 20, 2020 3:46:41 PM seedu.quotesify.commands.AddCommand execute

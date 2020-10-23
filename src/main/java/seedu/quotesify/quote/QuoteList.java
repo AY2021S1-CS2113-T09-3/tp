@@ -42,6 +42,10 @@ public class QuoteList extends QuotesifyList<Quote> {
         return quote;
     }
 
+    public void deleteReflection(int index) {
+        quotes.get(index).setReflectionNull();
+    }
+
     @Override
     public void add(Quote newQuote) {
         quotes.add(newQuote);

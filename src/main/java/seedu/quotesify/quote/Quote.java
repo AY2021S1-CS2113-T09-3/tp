@@ -108,6 +108,10 @@ public class Quote implements JsonSerializer {
         return reflection;
     }
 
+    public void setReflectionNull() {
+        reflection = null;
+    }
+
     @Override
     public String toString() {
         String quoteWithoutInformation = '\"' + quote + '\"';

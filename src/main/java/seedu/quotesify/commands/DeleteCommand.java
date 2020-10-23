@@ -1,5 +1,8 @@
 package seedu.quotesify.commands;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import seedu.quotesify.author.Author;
 import seedu.quotesify.book.Book;
 import seedu.quotesify.book.BookList;
 import seedu.quotesify.bookmark.Bookmark;
@@ -9,6 +12,8 @@ import seedu.quotesify.category.CategoryList;
 import seedu.quotesify.category.CategoryParser;
 import seedu.quotesify.exception.QuotesifyException;
 import seedu.quotesify.lists.ListManager;
+import seedu.quotesify.lists.QuotesifyList;
+import seedu.quotesify.parser.JsonSerializer;
 import seedu.quotesify.quote.Quote;
 import seedu.quotesify.quote.QuoteList;
 import seedu.quotesify.rating.Rating;
@@ -18,9 +23,12 @@ import seedu.quotesify.store.Storage;
 import seedu.quotesify.todo.ToDo;
 import seedu.quotesify.todo.ToDoList;
 import seedu.quotesify.ui.TextUi;
+import seedu.quotesify.ui.UiMessage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 
 public class DeleteCommand extends Command {
     private String type;
@@ -66,11 +74,25 @@ public class DeleteCommand extends Command {
             QuoteList quotes = (QuoteList) ListManager.getList(ListManager.QUOTE_LIST);
             deleteQuote(quotes, ui, information);
             break;
+        case TAG_QUOTE_REFLECTION:
+            QuoteList quoteList = (QuoteList) ListManager.getList(ListManager.QUOTE_LIST);
+            deleteQuoteReflection(quoteList, ui, information);
+            break;
         default:
             ui.printListOfDeleteCommands();
             break;
         }
         storage.save();
+    }
+
+    private void deleteQuoteReflection(QuoteList quoteList, TextUi ui, String information) {
+        try {
+            int quoteNumber = Integer.parseInt(information.trim()) - 1;
+            quoteList.deleteReflection(quoteNumber);
+            ui.printDeleteQuoteReflection(quoteList.getQuote(quoteNumber).getQuote());
+        } catch (NumberFormatException | IndexOutOfBoundsException e) {
+            System.out.println(ERROR_INVALID_QUOTE_NUM);
+        }
     }
 
     private void deleteQuote(QuoteList quotes, TextUi ui, String information) {
