@@ -150,14 +150,12 @@ public class BookList extends QuotesifyList<Book> {
 
         if (isDone) {
             filteredBooks = (ArrayList<Book>) books.stream()
-                    .filter(book -> {
-                        return book.isDone();
-                    }).collect(Collectors.toList());
+                    .filter(book -> book.isDone())
+                    .collect(Collectors.toList());
         } else {
             filteredBooks = (ArrayList<Book>) books.stream()
-                    .filter(book -> {
-                        return !book.isDone();
-                    }).collect(Collectors.toList());
+                    .filter(book -> !book.isDone())
+                    .collect(Collectors.toList());
         }
 
         return new BookList(filteredBooks);
